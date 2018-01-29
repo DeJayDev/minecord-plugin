@@ -1,0 +1,3 @@
+name: MinecordPlugin
+version: ${project.version}
+main: org.minecord.minecordplugin.MinecordPlugin
