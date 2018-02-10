@@ -1,17 +1,9 @@
 package org.minecord.minecordplugin.api;
 
+public interface Minecord {
 
-import org.minecord.minecordplugin.MinecordPlugin;
+    String VERSION = "0.1-ALPHA.0";
 
-public final class Minecord {
-
-    public static final String VERSION = "0.1-ALPHA.0";
-    private static final MinecordPlugin INSTANCE = MinecordPlugin.INSTANCE;
-
-    public static void connectMinecord(MinecordPlayer p, boolean connect) {
-        INSTANCE.connectMinecord(p, connect);
-    }
-    public static void updatePresence(MinecordPlayer p, RichPresence presence) {
-        INSTANCE.updatePresence(p, presence);
-    }
+    static void connectMinecord(MinecordPlayer p, boolean connect) {}
+    static void updatePresence(MinecordPlayer p, RichPresence presence) {}
 }
