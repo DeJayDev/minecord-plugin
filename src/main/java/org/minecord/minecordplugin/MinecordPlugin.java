@@ -17,7 +17,7 @@ public final class MinecordPlugin extends JavaPlugin implements Minecord{
     public static MinecordPlugin INSTANCE;
     public static Logger LOGGER = Bukkit.getLogger();
 
-    public static  Map<MinecordPlayer, Integer> minecordPlayer = new HashMap<>();
+    public static Map<MinecordPlayer, Integer> minecordPlayer = new HashMap<>();
 
     @Override
     public void onEnable() {
